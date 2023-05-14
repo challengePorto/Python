@@ -2,8 +2,10 @@ print('1 - cadastrar usuario \n2 - login \n3 - consultar plano \n4 - solicitar g
 
 resposta_continuar = 'SIM'
 
+resposta = int(input("digite um num"))
+
 while resposta_continuar == "SIM":
-    resposta = int(input('1 - cadastrar usuario \n2 - login \n3 - consultar plano'))
+
     if resposta == 1:
         print("=========cadastre o usuario=========")
         usuario_cadastro = input('digite o nome do usuario: ')
@@ -35,7 +37,7 @@ while resposta_continuar == "SIM":
         print("opcao incorreta")
         resposta = int(input('1 - cadastrar usuario \n2 - login \n3 - consultar plano'))
         
-    resposta_continuar = input("Deseja continuar? (sim/nao)").upper()
+    
 
 
 
